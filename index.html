@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>University</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+  <link rel="stylesheet" type="text/css" href="css/hover.css"> 
+  <link rel="stylesheet/less" type="text/css" href="less/variables.less">
+  <link rel="stylesheet/less" type="text/css" href="less/style.less">   
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/less.js"></script>
+</head>
+<body>
+  <div class="header-wrap">
+    <header>
+      <ul>
+        <li><a href="#">Home </a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Student</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Latest news</a></li>
+        <li><a href="#">Apply now</a></li>
+      </ul>
+    </header>
+  </div>
+  <div class="main-wrap">
+    <div class="row-first block">
+      <div class="row-first-item_1 anim"></div>
+      <div class="row-first-item_2 anim">
+        <h1>National Medical University</h1>
+        <span>О.О. Bogomolets</span>
+        <p>Краткий приветственный текст: Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </div>
+      <div class="row-first-item_3 anim">
+        <p>Admission<span>2016</span>OPEN</p>
+        <div class="button"><a href="javascript:PopUpShow()">APPLY NOW</a></div>
+        <div class="contact-link">or<a href="#">contact us</a></div>
+      </div>
+    </div>
+    <div class="row-second block">
+      <div class="row-second-item_1 anim"></div>
+      <div class="row-second-item_2 anim"></div>
+      <div class="row-second-item_3 anim grow-rotate">
+        <p class="grow-rotate">FACULTY OF<span>General medicine</span></p>
+        <button class="wobble-vertical">LEARN MORE</button>
+      </div>
+      <div class="row-second-item_4 anim"></div>
+    </div>
+    <div class="row-third block">
+      <div class="row-third-item_1 anim grow-rotate">
+        <p class="grow-rotate">FACULTY OF<span>Pharmacy</span></p>
+        <button class="wobble-vertical">LEARN MORE</button>
+      </div>
+      <div class="row-third-item_2 anim"></div>
+      <div class="row-third-item_3 anim grow-rotate">
+        <p class="grow-rotate">FACULTY OF<span>Stomatology</span></p>
+        <button class="wobble-vertical">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-wrap">
+    <h2>ABOUT O.O. BOGOMOLETS UNIVERSITY</h2>
+    <div class="slider">
+      <div class="slide slide-item_1">
+        <div class="link-wrap">
+          <a href="#">Learn More</a>
+        </div>
+        <div class="text-wrap">
+          <h3>Rector`s Message</h3>
+          <p>Bogomolets National University
+            Received 19 Golden Medals in 2005-
+            2011 At International Exibitions.</p>
+        </div>
+      </div>
+      <div class="slide slide-item_2">
+        <div class="link-wrap">
+          <a href="#">Learn More</a>
+        </div>
+        <div class="text-wrap">
+          <h3>Career Service</h3>
+          <p>Mission - to help students and alumni
+          in their career planing and successfull 
+          employment.</p>
+        </div>
+      </div>
+      <div class="slide slide-item_3">
+        <div class="link-wrap">
+          <a href="#">Learn More</a>
+        </div>
+        <div class="text-wrap">
+          <h3>University in 2015</h3>
+          <p>he National Medical University Is One
+          Of The Oldest Since 1841 And Providing
+          Training In 12 Faculties.</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+                                                  <!-- POPUp-->
+  <div class="popup-wrap">     
+   <div class="form-inner">
+     <form action="#" method="POST">
+      <a href="javascript:PopUpHide()"></a>
+      <h2>APPLY NOW</h2>
+      <span>Our managers will contact with you and help with all questions.</span>
+        <fieldset>
+          <label>Your name</label>
+          <input type="text" name="name">
+          <label class="email">Your Email</label>
+          <input type="email" name="email">
+          <label>Message</label>
+          <textarea name="text" cols="30" rows="4"></textarea>
+          <div class="button-green"><a class="button link" href="javascript:PopUpShow1()">SEND</a></div>
+        </fieldset>
+     </form>
+   </div>
+  </div>
+
+  <div class="popup-2-wrap">
+    <div class="content">
+      <a href="javascript:PopUpHide1()"></a>
+      <img src="img/smile.png" alt="smile">
+      <h2>THANK YOU</h2>
+      <span>We will contact with you soon.</span>      
+    </div>
+  </div>
+                                                     <!--Scrip for POPup-->
+ <script>
+  $(document).ready(function(){
+    PopUpHide();
+  });
+  function PopUpShow(){
+      $(".popup-wrap").show();
+  }
+  function PopUpHide(){
+      $(".popup-wrap").hide();
+  }
+
+  $(document).ready(function(){
+    PopUpHide1();
+  });
+  function PopUpShow1(){
+      $(".popup-2-wrap").show();
+  }
+  function PopUpHide1(){
+      $(".popup-2-wrap").hide();
+  }
+ </script>
+</body>
+</html>
